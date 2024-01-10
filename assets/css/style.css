@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 0 12px #00000085;
+  border-radius: 12px 40px;
+  width: 500px;
+  height: 300px;
+  backdrop-filter: blur(14px);
+}
+
+.container h1 {
+  font-size: 48px;
+  position: absolute;
+  top: 30px;
+}
+
+.container .watch {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  position: relative;
+  top: 30px;
+}
+
+.container .buttons {
+  background: #f1000097;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  width: 330px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px #000;
+  position: relative;
+  top: 40px;
+}
+
+.container .buttons button {
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 0 4px #000;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background: #fff;
+  font-weight: 600;
+  transition: .6s;
+}
+
+.container .buttons button:active {
+  background: #c4afb0;
+  transition: none;
+}
+
+footer {
+  position: absolute;
+  top: 50px;
+  box-shadow: 0 6px 8px #00000085;
+  padding: 6px;
+  border-radius: 6px;
+  backdrop-filter: blur(12px);
+}

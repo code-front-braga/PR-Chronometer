@@ -2,23 +2,40 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Chronometer</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script defer src="./assets/script/main.js"></script>
-    <script defer src="./assets/script/colors.js"></script>
+
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
   </head>
   <body>
-    <img src="./assets/img/background.jpg" />
-    <section class="container">
-      <h1>Chronometer</h1>
-      <p class="watch">00:00:00</p>
-      <p class="buttons">
-        <button class="start">Start</button>
-        <button class="pause">Pause</button>
-        <button class="reset">Reset</button>
-      </p>
+    <section class="section-container">
+      <img src="./src/assets/img/background.jpg" />
+
+      <div class="chronometer-container">
+        <div class="chronometer-content">
+          <span>20 : 48 : 55</span>
+        </div>
+        <div class="buttons-container">
+          <button>Pause</button>
+          <button>Start</button>
+          <button>Reset</button>
+        </div>
+      </div>
     </section>
-    <footer>Created by Leonardo Braga</footer>
+
+    <footer class="footer-container">
+      <div class="footer-content">
+        Developed by |
+        <a href="https://github.com/code-front-braga"
+          ><img
+            src="./src/assets/img/logo_braga_code.png"
+            alt="Logo { braga.code } com gradiente de cor azul claro e azul escuro"
+        /></a>
+      </div>
+    </footer>
+
+    <script type="module" src="./dist/js/index.js"></script>
   </body>
 </html>

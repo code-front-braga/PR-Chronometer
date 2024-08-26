@@ -65,6 +65,7 @@ button {
   background: #fafafa;
   border-radius: 2px;
   border: none;
+  box-shadow: 0 0 1.6rem #000;
 
   font-size: 2rem;
   font-weight: bold;
@@ -72,6 +73,14 @@ button {
 
   flex: 1;
   padding: 1.6rem;
+}
+
+.buttons-container button:hover {
+  opacity: .85;
+}
+
+.buttons-container button:active {
+  transform: scale(.95);
 }
 
 .footer-container {

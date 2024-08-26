@@ -76,11 +76,11 @@ button {
 }
 
 .buttons-container button:hover {
-  opacity: .85;
+  opacity: 0.85;
 }
 
 .buttons-container button:active {
-  transform: scale(.95);
+  transform: scale(0.95);
 }
 
 .footer-container {

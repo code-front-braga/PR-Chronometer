@@ -1,40 +1,56 @@
-const watch = document.querySelector('.watch');
+const displayChronometer = document.querySelector('.chronometer-content span') as HTMLElement;
 const startButton = document.querySelector('.start');
 const pauseButton = document.querySelector('.pause');
 const resetButton = document.querySelector('.reset');
 
-let SECONDS = 0;
-let TIMER;
+let elapsedSeconds = 0;
+let TIMER: ReturnType<typeof setInterval>;
 
-const getTimeFromSeconds = seconds => {
-  const data = new Date(seconds * 1000);
-  return data.toLocaleTimeString('pt-BR', {
-    hour12: false,
-    timeZone: 'GMT',
-  });
-};
+function initChronometer() {
+  startChronometer();
+  pauseChronometer();
+  resetChronometer();
+}
 
-const startWatch = () => {
+function fullTimeReset(elapsedSeconds: number): string {
+  const resetMinutesAndSeconds = new Date(elapsedSeconds * 1000);
+  const fullTimeFormatted = resetMinutesAndSeconds
+    .toLocaleTimeString('pt-br', { hour12: false, timeZone: 'GMT' })
+    .split(':')
+    .join(' : ');
+
+  return fullTimeFormatted;
+}
+
+function updateSeconds() {
   TIMER = setInterval(() => {
-    SECONDS++;
-    watch.innerHTML = getTimeFromSeconds(SECONDS);
+    elapsedSeconds++;
+
+    displayChronometer.textContent = fullTimeReset(elapsedSeconds);
   }, 1000);
-};
+}
 
-startButton.addEventListener('click', () => {
-  colorBlack();
-  clearInterval(TIMER);
-  startWatch();
-});
+function startChronometer() {
+  startButton?.addEventListener('click', () => {
+    clearInterval(TIMER);
+    updateSeconds();
+  });
+}
 
-pauseButton.addEventListener('click', () => {
-  colorGreenWhenPaused();
-  clearInterval(TIMER);
-});
+function pauseChronometer() {
+  pauseButton?.addEventListener('click', () => {
+    clearInterval(TIMER);
+  });
+}
 
-resetButton.addEventListener('click', () => {
-  colorRedWhenReset();
-  clearInterval(TIMER);
-  watch.innerHTML = '00:00:00';
-  SECONDS = 0;
-});
+function resetChronometer() {
+  resetButton?.addEventListener('click', () => {
+    clearInterval(TIMER);
+
+    displayChronometer.textContent = '00 : 00 : 00';
+
+    elapsedSeconds = 0;
+  });
+}
+
+initChronometer();

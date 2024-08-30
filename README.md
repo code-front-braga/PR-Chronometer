@@ -1,4 +1,4 @@
-# 🧮 Basic Chronometer
+# ⏱️ Basic Chronometer
 
 <img src='./src/assets/img/chronometer_print.png' alt='Print do Projeto' />
 

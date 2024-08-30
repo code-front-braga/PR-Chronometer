@@ -104,9 +104,10 @@ button {
 
   display: flex;
   align-items: center;
-  padding-left: 3rem;
+  gap: 2rem;
+  padding: 0.6rem 2rem;
 }
 
-.footer-content img {
-  width: 18rem;
+.footer-content a .svg {
+  width: 16rem;
 }

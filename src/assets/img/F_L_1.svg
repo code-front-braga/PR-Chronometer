@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="1 0.4125 235.6202 82.306" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="421.324" y1="651.844" x2="421.324" y2="1111.234" id="gradient-1" gradientTransform="matrix(-0.074353, -0.02278, 0.011413, -0.097971, 134.64885, 153.67569)">
+      <stop offset="0" style="stop-color: rgb(51, 8, 103);"/>
+      <stop offset="1" style="stop-color: rgb(48, 207, 208);"/>
+    </linearGradient>
+    <linearGradient x1="0.852" x2="0.852" y1="-0.026" y2="0.974" id="gradient-5" gradientTransform="matrix(-0.785054, -0.496147, 0.78153, -0.793359, 1.002564, 1.281227)">
+      <stop offset="0" style="stop-color: rgb(51, 8, 103);"/>
+      <stop offset="1" style="stop-color: rgb(48, 207, 208);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="421.324" y1="651.844" x2="421.324" y2="1111.234" id="gradient-2" gradientTransform="matrix(-0.074353, -0.02278, 0.011413, -0.097971, 122.622879, 153.815292)">
+      <stop offset="0" style="stop-color: rgb(51, 8, 103);"/>
+      <stop offset="1" style="stop-color: rgb(48, 207, 208);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="41.597" y1="43.014" x2="41.597" y2="77.157" id="gradient-3" gradientTransform="matrix(0.999977, 0.005016, -0.009976, 1.065722, 0.430101, -3.035601)">
+      <stop offset="0" style="stop-color: rgb(48, 207, 208);"/>
+      <stop offset="1" style="stop-color: rgb(51, 8, 103);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="166.731" y1="51.316" x2="166.731" y2="100.592" id="gradient-0" gradientTransform="matrix(0.657898, -0.753107, 1.060959, 0.92683, 13.594846, 129.921951)">
+      <stop offset="0" style="stop-color: rgb(48, 207, 208);"/>
+      <stop offset="1" style="stop-color: rgb(51, 8, 103);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="247.078" y1="45.027" x2="247.078" y2="82.284" id="gradient-6" gradientTransform="matrix(0.927442, -0.373968, 0.403225, 1, 21.77153, 90.399147)">
+      <stop offset="0" style="stop-color: rgb(20% 20% 20%)"/>
+      <stop offset="1" style="stop-color: rgb(48, 207, 208);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="234.598" y1="57.295" x2="234.598" y2="91.504" id="gradient-4">
+      <stop offset="0" style="stop-color: rgb(51, 8, 103);"/>
+      <stop offset="1" style="stop-color: rgb(48, 207, 208);"/>
+    </linearGradient>
+    <linearGradient x1="0" x2="0" y1="0" y2="1" id="gradient-14">
+      <stop offset="0" style="stop-color: rgb(48, 207, 208);"/>
+      <stop offset="1" style="stop-color: rgb(28, 40, 108);"/>
+    </linearGradient>
+    <style bx:fonts="Be Vietnam Pro">@import url(https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro%3Aital%2Cwght%400%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900&amp;display=swap);</style>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, -37.96086177171563, -21.049579934024507)">
+    <polygon class="cls-8" points="107.719 38.255 98.522 38.255 81 92.485 90.154 92.485 91.263 89.128 101.243 58.311 107.719 38.255" style="fill-rule: nonzero; fill: url('#gradient-1'); paint-order: fill; fill-opacity: 0.82;"/>
+    <path d="M 94.277 92.321 C 132.037 94.498 133.925 57.992 106.006 55.941" style="fill: url('#gradient-5'); paint-order: fill; fill-opacity: 0.82;"/>
+    <polygon class="cls-8" points="95.693 38.395 86.496 38.395 68.974 92.625 78.128 92.625 79.237 89.268 89.217 58.451 95.693 38.395" style="fill-rule: nonzero; paint-order: fill; fill-opacity: 0.82; fill: url('#gradient-2');"/>
+    <text style="fill: url('#gradient-3'); font-family: Constantia; font-size: 28px; white-space: pre;" transform="matrix(1.766549, 0, 0, 2.41336, -25.823796, -82.844125)" x="36.673" y="69.759">{</text>
+    <text style="fill: url('#gradient-0'); font-family: 'Be Vietnam Pro'; font-size: 39px; font-weight: 900; letter-spacing: -1.7px; text-transform: lowercase; white-space: pre;" x="123.998" y="90.376">.code</text>
+    <text style="fill: url('#gradient-6'); font-family: Arial, sans-serif; font-size: 33px; font-weight: 700; white-space: pre;" x="263.581" y="73.073">;</text>
+    <text style="fill: url('#gradient-4'); font-family: Constantia; font-size: 28px; white-space: pre;" transform="matrix(1.877141, 0, 0, 2.399886, -188.067386, -115.97069)" x="229.675" y="84.002">}</text>
+    <line x1="53.006" y1="35.327" x2="260.326" y2="35.327" style="fill: url('#gradient-14');"/>
+  </g>
+</svg>

@@ -56,7 +56,7 @@ Se você estiver usando uma extensão como o Live Server no Visual Studio Code, 
 npx live-server
 ```
 
-Isso abrirá o projeto no seu navegador padrão. Ou se quiser ver somente o funcional, eu hospedei o projeto no GitHub Pages: [Chronometer](https://code-front-braga.github.io/PR-Chronometer/)
+Isso abrirá o projeto no seu navegador padrão. Ou se quiser ver somente o funcional, eu hospedei o projeto no Vercel: [Chronometer](https://pr-chronometer.vercel.app)
 
 ## 🧑🏻‍💻Tecnologias utilizadas:
 

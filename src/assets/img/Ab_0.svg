@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="149.2311 148.5181 217.9965 187.7929" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="256.542" y1="113.747" x2="256.542" y2="426.052" id="gradient-1">
+      <stop offset="0" style="stop-color: rgb(48, 207, 208);"/>
+      <stop offset="1" style="stop-color: rgb(51, 8, 103);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="340.642" y1="216.003" x2="340.642" y2="426.052" id="gradient-2">
+      <stop offset="0" style="stop-color: rgb(48, 207, 208);"/>
+      <stop offset="1" style="stop-color: rgb(51, 8, 103);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="596.134" y1="166.712" x2="596.134" y2="345.608" id="gradient-6">
+      <stop offset="0" style="stop-color: rgb(51, 8, 103);"/>
+      <stop offset="1" style="stop-color: rgb(48, 207, 208);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="552.885" y1="442.383" x2="552.885" y2="1052.776" id="gradient-4">
+      <stop offset="0" style="stop-color: rgb(48, 207, 208);"/>
+      <stop offset="1" style="stop-color: rgb(51, 8, 103);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="552.885" y1="442.383" x2="552.885" y2="1052.776" id="gradient-5">
+      <stop offset="0" style="stop-color: rgb(48, 207, 208);"/>
+      <stop offset="1" style="stop-color: rgb(51, 8, 103);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="190.416" y1="113.562" x2="190.416" y2="425.867" id="gradient-0">
+      <stop offset="0" style="stop-color: rgb(48, 207, 208);"/>
+      <stop offset="1" style="stop-color: rgb(51, 8, 103);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="462.806" y1="379.043" x2="462.806" y2="419.119" id="gradient-3">
+      <stop offset="0" style="stop-color: rgb(48, 207, 208);"/>
+      <stop offset="1" style="stop-color: rgb(51, 8, 103);"/>
+    </linearGradient>
+  </defs>
+  <g transform="matrix(0.3500420153141022, 0, 0, 0.3500420153141022, 149.23106606648957, 148.0893118990855)">
+    <polygon class="cls-8" points="333.476 113.747 280.518 113.747 179.608 426.052 232.319 426.052 238.715 406.724 296.189 229.249 333.476 113.747" style="fill-rule: nonzero; paint-order: fill; fill: url('#gradient-1');"/>
+    <path d="M 252.074 425.513 C 469.525 438.048 480.395 227.811 319.619 216.003" style="paint-order: fill; fill: url('#gradient-2');"/>
+    <text style="fill: url('#gradient-6'); font-family: Arial, sans-serif; font-size: 160px; font-weight: 700; text-transform: lowercase; white-space: pre;" x="569.493" y="312.411">;</text>
+    <text style="fill: url('#gradient-4'); font-family: Constantia; font-size: 500px; white-space: pre;" transform="matrix(0.481914, 0, 0, 0.812114, -224.078922, -357.482671)" x="464.977" y="917.44">{</text>
+    <text style="fill: url('#gradient-5'); font-family: Constantia; font-size: 500px; white-space: pre;" transform="matrix(-0.481914, 0, 0, -0.812114, 795.281567, 896.419447)" x="464.977" y="917.44">{</text>
+    <polygon class="cls-8" points="267.35 113.562 214.392 113.562 113.482 425.867 166.193 425.867 172.589 406.539 230.063 229.064 267.35 113.562" style="fill-rule: nonzero; paint-order: fill; fill: url('#gradient-0');"/>
+    <ellipse style="fill: url('#gradient-3');" cx="462.806" cy="399.081" rx="20.038" ry="20.038"/>
+  </g>
+</svg>

@@ -1,0 +1,66 @@
+@media (max-width: 769px) and (max-height: 360px) {
+  .chronometer-container {
+    gap: 1.8rem;
+  }
+
+  .chronometer-content {
+    padding: 1rem;
+  }
+
+  .chronometer-content span {
+    font-size: 6rem;
+  }
+
+  .buttons-container {
+    padding: 0.8rem;
+  }
+
+  .buttons-container button {
+    font-size: 1.6rem;
+    padding: 0.8rem;
+  }
+
+  .footer-container {
+    padding: 1rem;
+  }
+
+  .footer-content {
+    gap: 1rem;
+    padding: 0.3rem 1rem;
+  }
+
+  .footer-content a .svg {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .chronometer-content span {
+    font-size: 5rem;
+  }
+
+  .buttons-container button {
+    font-size: 1.6rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .chronometer-content span {
+    font-size: 4rem;
+  }
+
+  .footer-content a .svg {
+    width: 8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .chronometer-content span {
+    font-size: 3.2rem;
+  }
+
+  .buttons-container button {
+    font-size: 1.4rem;
+  }
+}

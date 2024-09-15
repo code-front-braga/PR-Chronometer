@@ -1,56 +1,45 @@
 const displayChronometer = document.querySelector('.chronometer-content span') as HTMLElement;
-const startButton = document.querySelector('.start');
-const pauseButton = document.querySelector('.pause');
-const resetButton = document.querySelector('.reset');
+
+const startButton = document.querySelector('.start') as HTMLButtonElement;
+const pauseButton = document.querySelector('.pause') as HTMLButtonElement;
+const resetButton = document.querySelector('.reset') as HTMLButtonElement;
 
 let elapsedSeconds = 0;
-let TIMER: ReturnType<typeof setInterval>;
+let timer: ReturnType<typeof setInterval> | null;
 
-function initChronometer() {
-  startChronometer();
-  pauseChronometer();
-  resetChronometer();
+function init() {
+  startButton.addEventListener('click', () => start());
+  pauseButton.addEventListener('click', () => pause());
+  resetButton.addEventListener('click', () => reset());
 }
 
-function fullTimeReset(elapsedSeconds: number): string {
-  const resetMinutesAndSeconds = new Date(elapsedSeconds * 1000);
-  const fullTimeFormatted = resetMinutesAndSeconds
-    .toLocaleTimeString('pt-br', { hour12: false, timeZone: 'GMT' })
-    .split(':')
-    .join(' : ');
-
-  return fullTimeFormatted;
+function formatTime(seconds: number): string {
+  const date = new Date(seconds * 1000);
+  return date.toLocaleTimeString('pt-br', { hour12: false, timeZone: 'GMT' }).split(':').join(' : ');
 }
 
-function updateSeconds() {
-  TIMER = setInterval(() => {
+function updateDisplay() {
+  displayChronometer.textContent = formatTime(elapsedSeconds);
+}
+
+function start() {
+  timer && clearInterval(timer);
+
+  timer = setInterval(() => {
     elapsedSeconds++;
-
-    displayChronometer.textContent = fullTimeReset(elapsedSeconds);
+    updateDisplay();
   }, 1000);
 }
 
-function startChronometer() {
-  startButton?.addEventListener('click', () => {
-    clearInterval(TIMER);
-    updateSeconds();
-  });
+function pause() {
+  timer && clearInterval(timer);
 }
 
-function pauseChronometer() {
-  pauseButton?.addEventListener('click', () => {
-    clearInterval(TIMER);
-  });
+function reset() {
+  timer && clearInterval(timer);
+
+  elapsedSeconds = 0;
+  updateDisplay();
 }
 
-function resetChronometer() {
-  resetButton?.addEventListener('click', () => {
-    clearInterval(TIMER);
-
-    displayChronometer.textContent = '00 : 00 : 00';
-
-    elapsedSeconds = 0;
-  });
-}
-
-initChronometer();
+init();

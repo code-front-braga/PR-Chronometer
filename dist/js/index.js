@@ -4,42 +4,32 @@ const startButton = document.querySelector('.start');
 const pauseButton = document.querySelector('.pause');
 const resetButton = document.querySelector('.reset');
 let elapsedSeconds = 0;
-let TIMER;
-function initChronometer() {
-    startChronometer();
-    pauseChronometer();
-    resetChronometer();
+let timer;
+function init() {
+    startButton.addEventListener('click', () => start());
+    pauseButton.addEventListener('click', () => pause());
+    resetButton.addEventListener('click', () => reset());
 }
-function fullTimeReset(elapsedSeconds) {
-    const resetMinutesAndSeconds = new Date(elapsedSeconds * 1000);
-    const fullTimeFormatted = resetMinutesAndSeconds
-        .toLocaleTimeString('pt-br', { hour12: false, timeZone: 'GMT' })
-        .split(':')
-        .join(' : ');
-    return fullTimeFormatted;
+function formatTime(seconds) {
+    const date = new Date(seconds * 1000);
+    return date.toLocaleTimeString('pt-br', { hour12: false, timeZone: 'GMT' }).split(':').join(' : ');
 }
-function updateSeconds() {
-    TIMER = setInterval(() => {
+function updateDisplay() {
+    displayChronometer.textContent = formatTime(elapsedSeconds);
+}
+function start() {
+    timer && clearInterval(timer);
+    timer = setInterval(() => {
         elapsedSeconds++;
-        displayChronometer.textContent = fullTimeReset(elapsedSeconds);
+        updateDisplay();
     }, 1000);
 }
-function startChronometer() {
-    startButton?.addEventListener('click', () => {
-        clearInterval(TIMER);
-        updateSeconds();
-    });
+function pause() {
+    timer && clearInterval(timer);
 }
-function pauseChronometer() {
-    pauseButton?.addEventListener('click', () => {
-        clearInterval(TIMER);
-    });
+function reset() {
+    timer && clearInterval(timer);
+    elapsedSeconds = 0;
+    updateDisplay();
 }
-function resetChronometer() {
-    resetButton?.addEventListener('click', () => {
-        clearInterval(TIMER);
-        displayChronometer.textContent = '00 : 00 : 00';
-        elapsedSeconds = 0;
-    });
-}
-initChronometer();
+init();
